@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Vaccination System</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 20px;
+            width: 400px;
+            margin: 0 auto;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Vaccination System</h1>
+
+    <h2>Add User</h2>
+    <form action="/index1" method="post" >
+        <label for="idDetails">ID Details:</label>
+        <input type="text" id="idDetails" name="idDetails" required><br><br>
+
+        <label for="idType">ID Type:</label>
+        <select id="idType" name="idType" required>
+            <option value="Aadhar Card">Aadhar Card</option>
+            <option value="PAN Card">PAN Card</option>
+            <option value="Voter ID">Voter ID</option>
+        </select><br><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"  required><br><br>
+
+        <label for="contact">Contact Number:</label>
+        <input type="text" id="contact" name="contact" required><br><br>
+
+        <label for="vaccineName">Vaccine Name:</label>
+        <select id="vaccineName" name="vaccineName"  required>
+            <option value="Covaxin">Covaxin</option>
+            <option value="Covishield">Covishield</option>
+            <option value="Sputnik">Sputnik</option>
+        </select><br><br>
+
+        <input type="submit" value="submit">
+    </form>
+
+    <h2>Show All Users</h2>
+    <a href="/showAllUsers">View All Users</a>
+</div>
+</body>
+</html>
